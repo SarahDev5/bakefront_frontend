@@ -1,7 +1,7 @@
 /* Variables */
 :root {
-  --colour-primary: #6200ea;
-  --colour-secondary: #ff0080;
+  --colour-primary: #f177b2;
+  --colour-secondary: #242123;
   --colour-background-white: white;
   --colour-background-light: #f0f0f0;
   --colour-background-dark: black;
@@ -43,4 +43,20 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  flex: 1 1 300px; /* Flexible width */
+}
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+  }
+  .content {
+    font-size: 1rem;
+  }
 }
