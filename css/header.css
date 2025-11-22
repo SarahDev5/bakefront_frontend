@@ -8,6 +8,7 @@
   color: var(--colour-text-light);
   height: 400px;    
   padding-bottom: var(--spacing-xxl);
+
 }
 .header__logo img {
   max-height: 200px;
@@ -19,6 +20,8 @@
   height: 200px;   /* must set height */
   width: 200px;    /* must set width */
   border: 3px solid var(--colour-text-light);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
 }
 
 }
