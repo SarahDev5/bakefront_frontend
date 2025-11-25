@@ -1,4 +1,7 @@
 /* Header */
+
+
+
 .header {
   background: linear-gradient(
     to bottom left,
@@ -6,27 +9,28 @@
     var(--colour-secondary)
   );
   color: var(--colour-text-light);
-  height: 300px;    
+  height: 200px;    
   padding-bottom: var(--spacing-xxl);
 
 }
-.header__logo img {
-  max-height: 200px;
-  border-radius: 180px;   /* perfectly round image */
-}
+
 .header__logo {
-  .header__logo {
-  background-image: url("../images/img_bakefront.png");
+  background-image: url("../images/img_bakefront - Copy.jpg");
+  max-height: 200px;
+  border-radius: 200px;   /* perfectly round image */
+  box-shadow: 0 0 25px rgba(0, 0, 0.7, 0.9);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   height: 200px;   /* must set height */
   width: 200px;    /* must set width */
-  border: 3px solid var(--colour-text-light);
-  box-shadow: var(--box-shadow);
+  position: absolute;
+  top: 20px;   /* adjust to taste */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
-}
 .header__content {
   max-width: var(--width-max);
   display: flex;

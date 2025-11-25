@@ -1,11 +1,15 @@
 /* Variables */
+html {
+  overflow-y: scroll; /* always reserve space for scrollbar */
+}
+
 :root {
   --colour-primary: #ed97c1;
-  --colour-secondary: #242123;
-  --colour-background-white: white;
+  --colour-secondary: #f3eff1;
+  --colour-background-white: rgb(213, 200, 210);
   --colour-background-light: #f0f0f0;
   --colour-background-dark: black;
-  --colour-text-light: white;
+  --colour-text-light: #ffffff;
   --colour-text-dark: black;
 
   --width-max: 800px;
@@ -39,10 +43,10 @@
 
 /* General Styles */
 body {
-  font-family: var(--font-family-body);
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: justify;
 }
 
 .container {

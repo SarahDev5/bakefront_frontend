@@ -1,7 +1,31 @@
 /* Ask Section */
+
+.ask h1,
+.ask p {
+  color: #000000; /* pure black */
+}
+
 .ask {
-  padding: var(--spacing-xl) var(--spacing-l);
   text-align: left;
+}/* General main section styling to match About page */
+.main {
+  color: #000000;       /* black text */
+  margin-top: 100px;    /* push content lower down */
+  padding: 0 20px;      /* side padding for readability */
+  max-width: 800px;     /* keep text nicely contained */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ask section */
+.ask {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.ask h1,
+.ask p {
+  color: #000000; /* pure black */
 }
 
 .ask__label {
@@ -15,8 +39,9 @@
 }
 
 .ask__input {
+  display: block;
   width: 100%;
-  border: 1px solid var(--colour-background-light);
+  border: 1px solid var(--colour-background-dark);
   border-radius: var(--border-radius-s);
   background: var(--colour-background-light);
   color: var(--colour-text-dark);
@@ -24,6 +49,100 @@
   font-size: var(--font-size-body);
   font-family: var(--font-family-body);
   line-height: 1.5;
+  margin-bottom: 20px; /* gap between input and buttons */
+}
+
+.ask__button-example {
+  position: absolute;
+  z-index: 2;
+  right: var(--spacing-l);
+  top: var(--spacing-l);
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+.ask__button-example.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ask button {
+  margin-right: 10px;   /* spacing between buttons */
+  padding: 8px 16px;
+  font-size: 1rem;
+}
+
+.ask__footer {
+  margin-top: var(--spacing-l);
+}
+
+@media (min-width: 800px) {
+  .ask__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.ask__char-count {
+  font-size: var(--font-size-small);
+  font-style: italic;
+}
+
+.ask__char-count.has-error {
+  color: var(--colour-secondary);
+}
+
+.ask__loading {
+  display: none;
+}
+
+.ask__loading.is-loading {
+  display: block;
+}
+
+/* Results styling */
+.results {
+  margin-top: 40px;
+}
+
+.results__item {
+  margin-bottom: 20px;
+}
+
+.results__item img {
+  width: 150px;       /* consistent smaller image */
+  height: auto;
+  border-radius: var(--border-radius-s);
+  display: block;
+  margin-bottom: var(--spacing-m);
+}
+
+
+.ask__label {
+  display: block;
+  font-size: var(--font-size-subheading);
+  margin-bottom: var(--spacing-l);
+}
+
+.ask__input-wrapper {
+  position: relative;
+}
+
+.ask__input {
+  width: 100%;
+  border: 1px solid var(--colour-background-dark);
+  border-radius: var(--border-radius-s);
+  background: var(--colour-background-light);
+  color: var(--colour-text-dark);
+  padding: var(--spacing-l);
+  font-size: var(--font-size-body);
+  font-family: var(--font-family-body);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-m);
 }
 
 .ask__button-example {
@@ -71,3 +190,55 @@
 .ask__loading.is-loading {
   display: block;
 }
+
+.results__item img {
+  width: 200px;       /* shrink image width */
+  height: auto;       /* keep aspect ratio */
+  border-radius: var(--border-radius-s); /* optional rounded corners */
+  display: block;
+  margin-bottom: var(--spacing-m);
+}
+
+  <style>
+    /* Match About page styling */
+    .main {
+      color: #000000;       /* black text */
+      margin-top: 100px;    /* push content lower down */
+      padding: 0 20px;      /* add side padding for readability */
+      max-width: 800px;     /* keep text nicely contained */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ask {
+      margin-top: 30px;
+    }
+
+    .ask__input {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;  /* gap between input and buttons */
+      padding: 10px;
+      font-size: 1rem;
+    }
+
+    .ask button {
+      margin-right: 10px;   /* spacing between buttons */
+      padding: 8px 16px;
+      font-size: 1rem;
+    }
+
+    .results {
+      margin-top: 40px;
+    }
+
+    .results__item {
+      margin-bottom: 20px;
+    }
+
+    .results__item img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }

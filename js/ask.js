@@ -1,5 +1,5 @@
 class Ask {
-  maxLength = 160;
+  maxLength = 50;
 
   constructor() {
     this.askContainer = document.querySelector(".ask");
@@ -71,9 +71,10 @@ class Ask {
 
       const json = await response.json();
       this.processResults(json.meals || []);
-      this.loading.classList.remove("is-loading");
     } catch (error) {
       console.error(error.message);
+      this.resultsList.innerHTML = "<p>Something went wrong. Please try again later.</p>";
+    } finally {
       this.loading.classList.remove("is-loading");
     }
   }
@@ -94,10 +95,10 @@ class Ask {
       resultsItem.classList.add("results__item");
 
       resultsItem.innerHTML = `
-        <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+        <img src="${meal.strMealThumb}" alt="Photo of ${meal.strMeal}">
         <h3 class="results__item-title">${meal.strMeal}</h3>
         <p class="results__item-description"><strong>Category:</strong> ${meal.strCategory}</p>
-        <p class="results__item-description"><strong>Instructions:</strong> ${meal.strInstructions.substring(0, 120)}...</p>
+        <p class="results__item-description"><strong>Instructions:</strong> ${meal.strInstructions}</p>
       `;
 
       this.resultsList.appendChild(resultsItem);
@@ -129,10 +130,10 @@ async function getRecipes() {
         card.className = "recipe-card";
 
         card.innerHTML = `
-          <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+          <img src="${meal.strMealThumb}" alt="Photo of ${meal.strMeal}">
           <h3>${meal.strMeal}</h3>
           <p><strong>Category:</strong> ${meal.strCategory}</p>
-          <p><strong>Instructions:</strong> ${meal.strInstructions.substring(0, 120)}...</p>
+          <p><strong>Instructions:</strong> ${meal.strInstructions}</p>
         `;
 
         recipesContainer.appendChild(card);

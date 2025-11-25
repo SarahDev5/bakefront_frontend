@@ -1,10 +1,14 @@
 .main {
-  padding: var(--spacing-l);
+  position: absolute;
+  top: 90px;   /* place it 60px from the top of the page */
+  left: 0;
+  right: 0;
+  margin: auto;
   max-width: var(--width-max);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: calc(-1 * var(--spacing-xl));
-  background: var(--colour-background-white);
+  background: var(--colour-background-light);
   border-radius: var(--border-radius-l);
   box-shadow: var(--box-shadow);
+  color: #000000;
+  z-index: 2;
 }
+
