@@ -1,113 +1,112 @@
-[
-  {
-    "img": "https://placehold.co/600x400/0000FF/FFFFFF?text=Galactic+Telescope",
-    "title": "Galactic Telescope",
-    "description": "A high-powered telescope for stargazing and exploring deep space.",
+[{
+    "img": "../images/img_HotAirballon.jpg",
+    "title": "Hot Air Balloon theme",
+    "description": "🎈 Handcrafted fondant hot air balloons floating above or around the cake, complete with tiny baskets and ropes.",
     "stars": 5,
     "price": "£199.99"
   },
   {
-    "img": "https://placehold.co/600x400/FF0000/FFFFFF?text=Martian+Rover+Toy",
-    "title": "Martian Rover Toy",
-    "description": "A detailed model of the latest Mars exploration rover.",
+    "img": "../images/img_cocomelon.jpg",
+    "title": "Coco Melon theme",
+    "description": "🍉CoComelon-Bring the magic of nursery rhymes to life with this vibrant CoComelon-themed cake, inspired by the beloved children's show! ",
     "stars": 4,
     "price": "£29.99"
   },
   {
-    "img": "https://placehold.co/600x400/00FF00/000000?text=Lunar+Globe",
-    "title": "Lunar Globe",
-    "description": "A glow-in-the-dark moon globe with detailed craters and landmarks.",
+    "img": "../images/Avengers.jpg",
+    "title": "Avengers",
+    "description": "💥 Iconic elements from the Marvel universe — including edible logos, character toppers, and themed colors",
     "stars": 5,
-    "price": "£14.99"
+    "price": "£20.99"
   },
   {
-    "img": "https://placehold.co/600x400/FFFF00/000000?text=NASA+Backpack",
-    "title": "NASA Backpack",
-    "description": "A stylish and durable backpack with an official NASA logo.",
+    "img": "../images/safaritheme.jpg",
+    "title": "Safari Theme",
+    "description": "🦁 Safari-Embark on a wild celebration with this vibrant safari-themed cake, inspired by the heart of the jungle!",
     "stars": 4,
-    "price": "£34.99"
+    "price": "£24.99"
   },
   {
-    "img": "https://placehold.co/600x400/000000/FFFFFF?text=Solar+System+Model",
-    "title": "Solar System Model",
-    "description": "An educational 3D model of our solar system with rotating planets.",
+    "img": "../images/rosemilk.jpg",
+    "title": "Rose Milk cake",
+    "description": "Rose Milk cake, with coconut flovoured spounge",
     "stars": 5,
     "price": "£24.99"
   },
   {
-    "img": "https://placehold.co/600x400/800080/FFFFFF?text=Astronaut+Helmet",
-    "title": "Astronaut Helmet",
-    "description": "A replica astronaut helmet with working LED lights and a retractable visor.",
+    "img": "../images/pinatatheme.jpg",
+    "title": "Pinata theme",
+    "description": "🎉 Piñata-Get ready for a sweet surprise with this colorful piñata-themed cake, designed to bring joy and excitement to your party! .",
     "stars": 4,
     "price": "£49.99"
   },
   {
-    "img": "https://placehold.co/600x400/FF4500/FFFFFF?text=Rocket+Lamp",
-    "title": "Rocket Lamp",
-    "description": "A decorative lamp in the shape of a launching rocket.",
+    "img": "../images/pinata2.jpg",
+    "title": "Pinata Theme ",
+    "description": "🐷 Pig Piñata-Add a burst of joy to your party with this adorable pig piñata-themed cake, combining farmyard charm with fiesta flair! .",
     "stars": 4,
     "price": "£19.99"
   },
   {
-    "img": "https://placehold.co/600x400/FFFFFF/0000FF?text=Black+Hole+Poster",
-    "title": "Black Hole Poster",
-    "description": "A stunning high-resolution print of a black hole.",
+    "img": "../images/pinata1.jpg",
+    "title": "Pinata theme",
+    "description": "❤️ Love Theme-Bursting with sweetness and affection, this love-themed piñata cake is a celebration of hearts, hugs, and happy surprises.",
     "stars": 3,
-    "price": "£9.99"
+    "price": "£29.99"
   },
   {
-    "img": "https://placehold.co/600x400/00CED1/000000?text=Zero+Gravity+Pen",
-    "title": "Zero Gravity Pen",
-    "description": "A pen that writes in zero gravity, underwater, and upside down.",
+    "img": "../images/lillypond.jpg",
+    "title": "Lilly Pond theme",
+    "description": "🌸 Delicate sugar lilies in soft pinks and whites, blooming gracefully among edible reeds and blossoms.",
     "stars": 5,
     "price": "£12.99"
   },
   {
-    "img": "https://placehold.co/600x400/32CD32/FFFFFF?text=Moon+Base+LEGO+Set",
-    "title": "Moon Base LEGO Set",
-    "description": "A fun and detailed LEGO set for building your own moon base.",
+    "img": "../images/jungletheme.jpg",
+    "title": "Jungle theme Cake",
+    "description": "🐒🌴Adorable fondant jungle animals like monkeys, lions, elephants, and giraffes.",
     "stars": 5,
     "price": "£49.99"
   },
   {
-    "img": "https://placehold.co/600x400/FFA500/000000?text=Comet+Puzzle",
-    "title": "Comet Puzzle",
-    "description": "A challenging 1000-piece puzzle of a stunning comet streaking across space.",
+    "img": "../images/Engagementtheme1.jpg",
+    "title": "Engagement Theme Cake",
+    "description": "💖 Elegant tiers adorned with soft pastel hues or classic white and gold accents.",
     "stars": 4,
-    "price": "£15.99"
+    "price": "£35.99"
   },
   {
-    "img": "https://placehold.co/600x400/00008B/FFFFFF?text=Saturn+Ring+Replica",
-    "title": "Saturn Ring Replica",
-    "description": "A scientifically accurate scale model of Saturn and its rings.",
+    "img": "../images/Engagementtheme.jpg",
+    "title": "Engagement Theme Cake",
+    "description": "Celebrate the promise of forever with this exquisite engagement cake, where elegance meets opulence.",
     "stars": 4,
     "price": "£39.99"
   },
   {
-    "img": "https://placehold.co/600x400/DA70D6/000000?text=Aurora+Borealis+Lamp",
-    "title": "Aurora Borealis Lamp",
-    "description": "A colour-changing lamp simulating the Northern Lights.",
+    "img": "../images/eastertheme.jpg",
+    "title": "Easter Theme cake",
+    "description": "🐰 Adorable fondant bunnies, chicks, and Easter eggs nestled among edible grass and flowers.",
     "stars": 5,
     "price": "£27.99"
   },
   {
-    "img": "https://placehold.co/600x400/B22222/FFFFFF?text=Space+Trivia+Game",
-    "title": "Space Trivia Game",
-    "description": "A fun and educational game testing your knowledge of space.",
+    "img": "../images/chicktheme.jpg",
+    "title": "Chick Theme cake",
+    "description": "🐣 Cute fondant or buttercream chicks with tiny beaks, rosy cheeks, and bright eyes.",
     "stars": 3,
-    "price": "£18.99"
+    "price": "£38.99"
   },
   {
-    "img": "https://placehold.co/600x400/2E8B57/FFFFFF?text=Galaxy+Projector",
-    "title": "Galaxy Projector",
-    "description": "A projector that fills your room with moving stars and nebulae.",
+    "img": "../images/bear.jpg",
+    "title": "Bear Theme cake",
+    "description": "🧸 A cuddly fondant or buttercream bear as the centerpiece — sitting, sleeping, or peeking out playfully.",
     "stars": 5,
     "price": "£44.99"
   },
   {
-    "img": "https://placehold.co/600x400/8B0000/FFFFFF?text=ISS+Model+Kit",
-    "title": "ISS Model Kit",
-    "description": "A build-your-own model of the International Space Station.",
+    "img": "../images/babysandal.jpg",
+    "title": "Cute Baby Sandal theme Cake",
+    "description": "👣 Adorable fondant baby sandals perched on top — detailed with bows, buckles, or floral accents.",
     "stars": 4,
     "price": "£59.99"
   }
