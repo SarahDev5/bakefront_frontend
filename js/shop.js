@@ -1,54 +1,56 @@
-// search.js
-document.addEventListener("DOMContentLoaded", () => {
-  const input = document.querySelector(".search__input");
-  const button = document.querySelector(".search__submit");
-  const resultCount = document.querySelector(".search__result-count");
-  const gallery = document.querySelector(".gallery-container");
+let cakes = [];
 
-  button.addEventListener("click", async () => {
-    const keyword = input.value.trim().toLowerCase();
+async function loadCakes() {
+const response = await fetch("./data/fake-products.json");
+  cakes = await response.json();
+}
 
-    if (!keyword) {
-      resultCount.textContent = "Please enter a keyword.";
-      return;
-    }
+export function searchCakes(keyword) {
+  return cakes.filter(cake =>
+    cake.description.toLowerCase().includes(keyword.toLowerCase())
+  );
+}
 
-    try {
-      // Fetch the JSON file (adjust path if needed)
-      const response = await fetch("./fake-products.json");
-      if (!response.ok) throw new Error("Could not load products.json");
+export function displayResults(results) {
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
 
-      const products = await response.json();
+  if (results.length === 0) {
+    resultsDiv.innerHTML = "<p>No cakes found.</p>";
+    return;
+  }
 
-      // Filter by keyword in description
-      const results = products.filter(product =>
-        product.description.toLowerCase().includes(keyword)
-      );
+  results.forEach(cake => {
+    // Create a star rating string (★ for filled, ☆ for empty)
+    const stars = "★".repeat(cake.stars) + "☆".repeat(5 - cake.stars);
 
-      // Show result count
-      resultCount.textContent = `${results.length} product(s) found`;
+    resultsDiv.innerHTML += `
+      <div class="cake-card">
+        <img src="${cake.img}" alt="${cake.title}" class="cake-image" />
+        <h3>${cake.title}</h3>
+        <p>${cake.description}</p>
+        <p><strong>${cake.price}</strong></p>
+        <p class="cake-stars">${stars}</p>
+      </div>
+    `;
+  });
+}
 
-      // Clear previous results
-      gallery.innerHTML = "";
 
-      // Render results
-      results.forEach(product => {
-        const card = document.createElement("div");
-        card.classList.add("product-card");
+document.addEventListener("DOMContentLoaded", async () => {
+  await loadCakes(); // load JSON before searching
 
-        card.innerHTML = `
-          <img src="${product.img}" alt="${product.title}" />
-          <h3>${product.title}</h3>
-          <p>${product.description}</p>
-          <p>⭐ ${product.stars} | ${product.price}</p>
-        `;
+  const searchInput = document.getElementById("searchBox");
+  const searchButton = document.getElementById("searchBtn");
 
-        gallery.appendChild(card);
-      });
-    } catch (err) {
-      console.error(err);
-      resultCount.textContent = "Error loading products.";
-    }
+  searchButton.addEventListener("click", () => {
+    const keyword = searchInput.value;
+    const results = searchCakes(keyword);
+    displayResults(results);
   });
 });
 
+export default {
+  searchCakes,
+  displayResults
+};

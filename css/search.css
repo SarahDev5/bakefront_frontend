@@ -17,7 +17,7 @@
 
 .search__input {
   flex: 1;
-  border: 1px solid var(--colour-background-light);
+  border: 1px solid var(--colour-background-dark);
   border-radius: var(--border-radius-s);
   background: var(--colour-background-light);
   color: var(--colour-text-dark);
