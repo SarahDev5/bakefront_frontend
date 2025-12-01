@@ -47,6 +47,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: justify;
+
+  /* Add background image */
+    background: url("/images/babysandal.jpg") no-repeat center center / cover,
+              rgba(255, 255, 255, 0.6); /* overlay color */
+  background-blend-mode: lighten; /* or multiply, overlay, etc. */
 }
 
 .container {

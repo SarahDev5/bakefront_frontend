@@ -31,6 +31,22 @@
   z-index: 10;
 }
 
+.header__logo--right {
+  background-image: url("../images/babysandal.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:cover;
+  width: 160px;
+  height: 160px;          /* add height so it doesn’t collapse */
+  border-radius: 20%;
+  position: absolute;
+  top: 10px;
+  right: 120px;            /* fixed distance from right edge */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  opacity: 0.6;
+}
+
+
 .header__content {
   max-width: var(--width-max);
   display: flex;

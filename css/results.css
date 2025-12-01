@@ -2,7 +2,7 @@
 .results {
   display: none;
   text-align: left;
-  padding: var(--spacing-l);
+  padding: calc(var(--spacing-l) + 1rem);
   border-top: 2px solid var(--colour-background-light);
 }
 
@@ -23,6 +23,14 @@
   padding: var(--spacing-l);
   border: 1px solid var(--colour-background-light);
   border-radius: var(--border-radius-l);
+}
+
+.cake-image {
+  width: 150px;       /* set a fixed width */
+  height: auto;       /* keep aspect ratio */
+  border-radius: 12px; /* round the corners */
+  display: block;     /* ensures proper spacing */
+  margin-bottom: 0.5rem; /* space below the image */
 }
 
 .results__show-more {

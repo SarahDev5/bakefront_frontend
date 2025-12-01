@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BakeFront | Homemade Cakes</title>
+  <title>BakeFront | Homemade Cakes for sale</title>
   <link rel="stylesheet" href="../css/style.css" />
   <script type="module" src="../js/shop.js"></script>
 </head>
@@ -11,26 +11,22 @@
   <!-- Header -->
   <header class="header">
     <div class="header__content">
-      <div class="header__logo">
-        <a href="../index.html" aria-label="BakeFront Home">
-        </a>
-      </div>
+      <div class="header__logo"></div>
+        <div class="header__logo--right"></div>
+      
       <nav class="header__nav" aria-label="Main navigation">
         <a href="../index.html" class="header__link">Home</a>
-        <a href="../about/" class="header__link">About</a>
         <a href="../ask/" class="header__link">Recipe</a>
         <a href="./" class="header__link header__link--active">Shop</a>
+        <a href="../contact/" class="header__link">Contact</a>
       </nav>
-    </div>
-    <div class="header__titles">
-      <h1 class="header__title">BakeFront | Shop</h1>
-      <p class="header__subtitle">Discover handcrafted cakes for every occasion</p>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="main">
     <section class="intro">
+      <h2>Cakes for sale</h2>
       <p>
         At <strong>BakeFront</strong>, we believe cakes are more than just desserts —
         they're moments of joy, love, and celebration beautifully baked into every layer.
@@ -41,7 +37,7 @@
 
     <!-- Search Section -->
    <main>
-  <h2>Search Our Cakes</h2>
+  
   <p>Type a keyword to find themed cakes from our collection.</p>
 
   <!-- Search input and button -->
@@ -49,11 +45,11 @@
   <button id="searchBtn">Search</button>
 
   <!-- Results container -->
+   <br>
   <div id="results"></div>
 </main>
 
       <div class="search__footer">
-        <p class="search__result-count">Showing 0 results</p>
         <label for="sortSelect" class="visually-hidden">Sort products</label>
         <select id="sortSelect" class="search__sort">
           <option value="priceLow">Price (low to high)</option>

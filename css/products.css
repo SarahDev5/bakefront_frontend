@@ -40,3 +40,11 @@
   padding: var(--spacing-l);
   text-align: center;
 }
+
+.cake-image {
+  width: 150px;       /* set a fixed width */
+  height: auto;       /* keep aspect ratio */
+  border-radius: 12px; /* round the corners */
+  display: block;     /* ensures proper spacing */
+  margin-bottom: 0.5rem; /* space below the image */
+}

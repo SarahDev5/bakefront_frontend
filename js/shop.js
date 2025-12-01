@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 });
 
+
 export default {
   searchCakes,
   displayResults

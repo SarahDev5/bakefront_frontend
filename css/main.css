@@ -5,7 +5,7 @@
   right: 0;
   margin: auto;
   max-width: var(--width-max);
-  background: var(--colour-background-light);
+  background : var(--colour-background-light);
   border-radius: var(--border-radius-l);
   box-shadow: var(--box-shadow);
   color: #000000;
