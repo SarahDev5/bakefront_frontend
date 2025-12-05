@@ -38,6 +38,11 @@
   position: relative;
 }
 
+.ask__button-ask:hover{
+  background: var(--colour-primary); /* replaces the gradient */
+  color: #fff;
+}
+
 .ask__input {
   display: block;
   width: 100%;
@@ -199,7 +204,6 @@
   margin-bottom: var(--spacing-m);
 }
 
-  <style>
     /* Match About page styling */
     .main {
       color: #000000;       /* black text */
@@ -226,7 +230,25 @@
       margin-right: 10px;   /* spacing between buttons */
       padding: 8px 16px;
       font-size: 1rem;
-    }
+      margin-bottom: 10px;
+      background: linear-gradient(
+      to bottom left,
+    var(--colour-primary),
+    var(--colour-secondary)
+  ); 
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2)  ;
+
+}
+
+#ask button:hover {
+  background: var(--colour-primary); /* replaces the gradient */
+  color: #fff;
+}
+
 
     .results {
       margin-top: 40px;
