@@ -13,7 +13,7 @@
     <div class="header__content">
       <div class="header__logo"></div>
         <div class="header__logo--right"></div>
-      
+      <button class="header__toggle" aria-label="Toggle navigation">☰</button>
       <nav class="header__nav" aria-label="Main navigation">
         <a href="../index.html" class="header__link">Home</a>
         <a href="../ask/" class="header__link">Recipe</a>
@@ -38,15 +38,18 @@
     <!-- Search Section -->
    <main>
   
+  
   <p>Type a keyword to find themed cakes from our collection.</p>
 
   <!-- Search input and button -->
   <input type="text" id="searchBox" placeholder="e.g. jungle, engagement, pinata" />
-  <button id="searchBtn">Search</button>
+  <button type="submit" id="searchBtn">Search</button>
+ 
 
   <!-- Results container -->
    <br>
   <div id="results"></div>
+ 
 </main>
 
       <div class="search__footer">
@@ -63,14 +66,21 @@
       </div>
     </section>
   </main>
+<script type="module" src="../js/script.js"></script>
+
+
+
+
+
+
 
   <!-- Footer -->
-  <footer class="footer">
+ <footer class="footer">
     <p class="footer__links">
       <a href="#" class="footer__link">Terms and Conditions</a> |
       <a href="#" class="footer__link">Cookies</a>
     </p>
-    <p class="footer__copyright">&copy; 2025 BakeFront</p>
+    <p class="footer__copyright">&copy; 2025</p>
   </footer>
 </body>
 </html>

@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BakeFront | Cake Recipes</title>
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="header__content">
       <div class="header__logo"></div>
       <div class="header__logo--right"></div>
+          <button class="header__toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
       <nav class="header__nav">
         <a href="../index.html" class="header__link">Home</a>
         <a href="./" class="header__link header__link--active">Recipe</a>
@@ -23,8 +27,10 @@
     <h2>Cake Recipe Finder</h2>
     <p>Discover delicious cake recipes by entering the name of your favourite cake below!</p>
     <section class="ask">
+      <form id="askForm">
       <input type="text" class="ask__input" placeholder="Enter cake name..." />
       <button class="ask__button-ask">Find</button>
+      </form>
       <p class="ask__char-count">50 characters remaining</p>
       <div class="ask__loading">Loading...</div>
     </section>
@@ -36,7 +42,7 @@
   </main>
 
   <script src="../js/ask.js"></script>
-
+  <script type="module" src="js/script.js"></script>
   <footer class="footer">
     <p class="footer__links">
       <a href="#" class="footer__link">Terms and Conditions</a> |

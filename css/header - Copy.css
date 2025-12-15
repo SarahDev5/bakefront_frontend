@@ -1,0 +1,172 @@
+/* Header 
+/* Default desktop view */
+ .header__content {
+  display: flex;
+  justify-content: space-between; /* spreads logo and nav/toggle apart */
+  align-items: center;            /* keeps everything vertically centered */
+  position: relative;             /*allows absolute positioning inside if needed */
+}
+
+
+
+.header__toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-items: left;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px; /* adjust based on header height */
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .header__nav.active {
+    display: flex;
+  }
+
+  .header__toggle {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+.header {
+  background: linear-gradient(
+    to bottom left,
+    var(--colour-primary),
+    var(--colour-secondary)
+  );
+  color: var(--colour-text-light);
+  height: 200px;    
+  padding-bottom: var(--spacing-xxl);
+
+}
+
+.header__logo {
+  background-image: url("../images/img_bakefront - Copy.jpg");
+  max-height: 200px;
+  border-radius: 200px;   /* perfectly round image */
+  box-shadow: 0 0 25px rgba(0, 0, 0.7, 0.9);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 200px;   /* must set height */
+  width: 200px;    /* must set width */
+  position: absolute;
+  top: 20px;   /* adjust to taste */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.header__logo--right {
+  background-image: url("../images/babysandal.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:cover;
+  width: 160px;
+  height: 160px;          /* add height so it doesn’t collapse */
+  border-radius: 20%;
+  position: absolute;
+  top: 10px;
+  right: 120px;            /* fixed distance from right edge */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  opacity: 0.6;
+}
+
+
+.header__content {
+  max-width: var(--width-max);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-l);
+}
+
+@media (min-width: 800px) {
+  .header__content {
+    flex-direction: row;
+  }
+}
+
+/* header nav */
+
+.header__nav {
+  border-bottom: 1px solid var(--colour-text-light);
+  padding-bottom: 5px;
+  display: flex;
+  gap: var(--spacing-l);
+  margin-top: var(--spacing-l);
+}
+
+@media (min-width: 800px) {
+  .header__nav {
+    margin-top: 0;
+  }
+}
+
+.header__link {
+  color: var(--colour-text-light);
+  text-decoration: none;
+  position: relative;
+}
+
+.header__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid var(--colour-text-light);
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+.header__link:hover::after,
+.header__link--active::after {
+  opacity: 1;
+}
+
+/* header titles */
+
+.header__titles {
+  padding-left: var(--spacing-l);
+  padding-right: var(--spacing-l);
+}
+
+.header__title {
+  font-size: var(--font-size-heading);
+}
+
+.header__subtitle {
+  font-size: var(--font-size-subheading);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}  

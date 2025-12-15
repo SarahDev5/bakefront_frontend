@@ -18,3 +18,8 @@ form button {
   font-size: 1rem;
   cursor: pointer;
 }
+
+form button:hover{
+  background: var(--colour-primary); /* replaces the gradient */
+  color: #fff;
+}
