@@ -1,14 +1,18 @@
 .main {
   position: absolute;
-  top: 105px;   /* place it 60px from the top of the page */
+  top: 105px;   /* place it Xpx from the top of the page */
   left: 0;
   right: 0;
-  margin: auto;
   max-width: var(--width-max);
   background : var(--colour-background-light);
   border-radius: var(--border-radius-l);
   box-shadow: var(--box-shadow);
   color: #000000;
   z-index: 2;
+  margin: auto;
+    /* Add inner spacing */
+  padding: 5rem;          /* space around the text inside the box */
+  /* Improve text readability */
+  line-height: 1.6;       /* increases vertical spacing between lines */
 }
 
